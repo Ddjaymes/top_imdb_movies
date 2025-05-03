@@ -5,12 +5,12 @@ import plotly.express as px
 # Load the dataset
 movies_imdb = pd.read_csv('IMDB Top 250 Movies.csv')
 
-st.header('Best Movies of All Time')
-st.subheader('IMDB Top 250 Movies')
+st.header('Melhores filmes de acordo com o IMDB')
+st.subheader('Conjunto de dados dos melhores filmes de acordo com o IMDB')
 
 movies_data = pd.read_csv('IMDB Top 250 Movies.csv') # lendo os dados
-hist_button = st.button('Criar histograma') # criar um botão
-        
+hist_button = st.button('Criando histograma') # criar um botão
+       
 if hist_button: # se o botão for clicado
     # escrever uma mensagem
     st.write('Criando um histograma para o conjunto de dados dos melhores filmes...')
